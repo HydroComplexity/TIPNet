@@ -17,11 +17,12 @@ Select filtering, time windows, and pre-processing options.
 
 Run Temporal Information Partitioning Network (TIPNet) program and save and plot results.
 
-References
+Note: some issues with plotting in the GUI may occur for various Matlab versions.  Please contact creator if you come across these issues.
 
-Goodwell, Allison and Praveen Kumar (2017) Temporal Information Partitioning: characterizing synergy, redundancy and uniqueness in interacting environmental variables. In Review at Water Resources Research
+References:
+Goodwell, Allison and Praveen Kumar (2017) Temporal Information Partitioning: characterizing synergy, redundancy and uniqueness in interacting environmental variables.  Water Resources Research, 2017 DOI: 10.1002/2016WR020216
 
-Goodwell, Allison and Praveen Kumar (2017) Temporal Information Partitioning Networks (TIPNets) to infer ecohydrologic behavior. In Review at Water Resources Research
+Goodwell, Allison and Praveen Kumar (2017) Temporal Information Partitioning Networks (TIPNets) to infer ecohydrologic behavior. Water Resources Research, 2017, DOI:10.1002/2016WR020216
 
 License:
 =======
@@ -43,7 +44,8 @@ License:
 At present this code is made available for educational use, and for research only under a collaborative agreement
 
 Contact Authors:
-Allison Goodwell: allison@goodwell.net
+Allison Goodwell: allison.goodwell@ucdenver.edu
 Praveen Kumar: kumar1@illinois.edu
-Questions and suggestions are welcome.
+
+Questions and suggestions are welcome!
 
