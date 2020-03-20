@@ -1,4 +1,4 @@
-
+https://zenodo.org/badge/73230010.svg
 
 Description:
 This MATLAB user interface takes time-series data as input nodes, and computes information theory based measures bewtween nodes as time-dependent links in a network.  See the user guide pdf for details on functionality and setup.
