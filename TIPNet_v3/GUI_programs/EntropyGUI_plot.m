@@ -29,9 +29,13 @@ handles.output = hObject;
 
 set(hObject,'toolbar','figure')
 
-load('GUI_programs/Temps/projectname.mat')
-load(fullpathname) %project file: contains mi structure of model information, data_orig, data
-
+load('GUI_programs/Temps/projectname.mat');
+p = load(fullpathname); %project file: contains mi structure of model information, data_orig, data
+AllStats = p.AllStats;
+entropy = p.entropy;
+mi = p.mi;
+varnames = p.varnames;
+plot(1:10);
 %populate popup menu_segment to choose between "averages" or individual
 %segments
 if mi.nsegs>1
@@ -77,11 +81,11 @@ set(handles.menu_plottype,'String',choices)
 
 %Initialize Plots for lagged MI (dominant lags, all segments averaged)
 if mi.nsegs>1
-I_mut = AllStats.I_normbyH;
-I_lag = AllStats.I_lag;
+    I_mut = AllStats.I_normbyH;
+    I_lag = AllStats.I_lag;
 else
-I_mut = entropy{1}.I_dom;
-I_lag = entropy{1}.I_dom_lag;
+    I_mut = entropy{1}.I_dom;
+    I_lag = entropy{1}.I_dom_lag;
 end
 
 titletext = '';
@@ -200,7 +204,12 @@ end
 function button_plot_Callback(hObject, eventdata, handles)
 
 load('GUI_programs/Temps/projectname.mat')
-load(fullpathname) %project file: contains mi structure of model information, data_orig, data
+p = load(fullpathname); %project file: contains mi structure of model information, data_orig, data
+entropy = p.entropy;
+varnames = p.varnames;
+mi = p.mi;
+AllStats = p.AllStats;
+%load(fullpathname) %project file: contains mi structure of model information, data_orig, data
 
 nvars = mi.nvars;
 lagvect = mi.lagvect;
